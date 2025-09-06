@@ -1,0 +1,58 @@
+//
+//  Date+Extensions.swift
+//  TaskOrganizer
+//  Created by Theofanis Nikolaou on 3/8/25.
+//
+
+import SwiftUI
+
+extension Date {
+    static var currentWeek: [Day] {
+        let calendar = Calendar.current
+        guard let firstWeekDay = calendar.dateInterval(of: .weekOfMonth, for: .now)?.start else {
+            return []
+        }
+        
+        var week: [Day] = []
+        for index in 0..<7 {
+            if let day = calendar.date(byAdding: .day, value: index, to: firstWeekDay) {
+                week.append(.init(date: day))
+            }
+        }
+        return week
+    }
+    
+    
+    static func currentWeek(offset: Int) -> [Day] {
+        let calendar = Calendar.current
+        guard let firstWeekDay = calendar.dateInterval(of: .weekOfMonth, for: .now)?.start else {
+            return []
+        }
+        
+        let startOfWeek = calendar.date(byAdding: .weekOfYear, value: offset, to: firstWeekDay)!
+        
+        var week: [Day] = []
+        for index in 0..<7 {
+            if let day = calendar.date(byAdding: .day, value: index, to: startOfWeek) {
+                week.append(.init(date: day))
+            }
+        }
+        return week
+    }
+    
+    func string(_ format: String) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        return formatter.string(from: self)
+    }
+    
+    func isSame(_ date: Date?) -> Bool {
+        guard let date else { return false }
+        return Calendar.current.isDate(self, inSameDayAs: date)
+    }
+    
+    struct Day: Identifiable {
+        var id: String = UUID().uuidString
+        var date: Date
+    }
+}
