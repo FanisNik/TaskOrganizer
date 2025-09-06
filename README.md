@@ -35,7 +35,7 @@ It also includes a **profile picture picker** using `PhotosPicker`.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - macOS with **Xcode 15+**  
