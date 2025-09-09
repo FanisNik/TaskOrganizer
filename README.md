@@ -27,7 +27,7 @@ It also includes a **profile picture picker** using `PhotosPicker`.
 
 ---
 
-## 🛠 Built With
+##  Built With
 
 - [Swift](https://developer.apple.com/swift/)  
 - [SwiftUI](https://developer.apple.com/xcode/swiftui/)  
@@ -45,4 +45,7 @@ It also includes a **profile picture picker** using `PhotosPicker`.
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/TaskOrganizer.git
-   cd TaskOrganizer
+   cd TaskOrganizer ```
+
+2. Open xcodeproj in Xcode.
+3. Build and run on a simulator or physical device (iOS 15+ recommended).
