@@ -31,8 +31,16 @@ It also includes a **profile picture picker** using `PhotosPicker`.
 
 - [Swift](https://developer.apple.com/swift/)  
 - [SwiftUI](https://developer.apple.com/xcode/swiftui/)  
-- [PhotosUI](https://developer.apple.com/documentation/photosui)  
+- [PhotosUI](https://developer.apple.com/documentation/photosui)
 
+  
+---
+
+## Documentation
+
+- [Specification](docs/specification.md)  
+- [Architecture](docs/architecture.md)  
+- [Usage Guide](docs/usage.md)  
 ---
 
 ## Getting Started
