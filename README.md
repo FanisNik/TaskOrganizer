@@ -38,7 +38,7 @@ It also includes a **profile picture picker** using `PhotosPicker`.
 
 ## Documentation
 
-- [Specification](TaskOrganizer/specification.md)  
+- [Specification](TaskOrganizer/specifications.md)  
 - [Architecture](TaskOrganizer/architecture.md)  
 - [Usage Guide](TaskOrganizer/usage.md)  
 ---
